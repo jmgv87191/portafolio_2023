@@ -1,3 +1,14 @@
+:root{
+    --prueba: rgb(19, 54, 25);
+}
+
+
+
 body{
     background-color: rebeccapurple;
+}
+
+.navbar_personalizado{
+    background: var(--prueba)
+
 }
