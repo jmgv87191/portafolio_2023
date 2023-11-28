@@ -1,5 +1,6 @@
 :root{
     --header-bg: #a6b985;
+    --header2-bg: #97aa77;
     --body-bg: #e9ede1;
     --text-brand: #213435;
     --text_brand_hover:#46685b;
@@ -8,6 +9,8 @@
 body{
     background-color: var(--body-bg);
 }
+
+/* barra de navegacion inicio */
 
 .navbar_personalizado{
     background: var(--header-bg);
@@ -59,3 +62,55 @@ li:hover{
     cursor: pointer;
     border-bottom: 3px solid wheat;
 }
+
+/* ! barra de navegacion fin */
+
+/* header inicio  */
+
+    .header{
+        background: var(--header2-bg);
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cont_sobre_mi{
+        width: 60%;
+        height: 80%;
+        display: flex;
+        border-bottom: 1px solid var(--text_brand_hover);
+    }
+
+    .cont_texto_sobre_mi{
+        width: 70%;
+        height: 100%;
+        padding: 30px;
+        color: rgb(70, 70, 70);
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .cont_img_sobre_mi{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo_sobre_mi{
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    .foto{
+        width: 70%;
+        height: 40%;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-image: url(../assets/batman.jpeg);
+        
+    }
+
+/*! header fin  */
