@@ -110,7 +110,57 @@ li:hover{
         border: 1px solid black;
         border-radius: 50%;
         background-image: url(../assets/batman.jpeg);
-        
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
 /*! header fin  */
+
+
+.hamb{
+    display: none;
+}
+
+
+/* responsive inicio */
+
+    @media (max-width:760px) {
+
+        .navbar_personalizado{
+            height: 12vh;
+            flex-direction: column;
+        }
+
+        .cont_brand{
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cont_lista_nav{
+            width: 100%;
+        }
+        ul{
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    @media (max-width:600px){
+
+        .navbar_personalizado{
+            height: 8vh;
+            flex-direction: row;
+        }
+
+        ul{
+            display: none;
+        }
+
+        .hamb{
+            display: block;
+        }
+    }
+
+/*! responsive fin */
+
