@@ -1,14 +1,61 @@
 :root{
-    --prueba: rgb(19, 54, 25);
+    --header-bg: #a6b985;
+    --body-bg: #e9ede1;
+    --text-brand: #213435;
+    --text_brand_hover:#46685b;
 }
 
-
-
 body{
-    background-color: rebeccapurple;
+    background-color: var(--body-bg);
 }
 
 .navbar_personalizado{
-    background: var(--prueba)
+    background: var(--header-bg);
+    display: flex;
+    height: 8vh;
+}
 
+.cont_brand{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.brand_personalizado{
+    color: var(--text-brand);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.brand_personalizado:hover{
+    color: var(--text_brand_hover);
+}
+
+.cont_lista_nav{
+    height: 100%;
+    width: 70%;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    height: 100%;
+    align-items: center;
+    justify-content: end;
+    padding-right: 40px;
+}
+
+li{
+    border-bottom: 3px solid transparent;
+    font-size: 20px;
+}
+
+li:hover{
+    color: wheat;
+    cursor: pointer;
+    border-bottom: 3px solid wheat;
 }
