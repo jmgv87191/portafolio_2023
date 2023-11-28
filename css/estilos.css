@@ -10,6 +10,21 @@ body{
     background-color: var(--body-bg);
 }
 
+/* Estilos para la barra de desplazamiento en navegadores WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--text_brand_hover); /* Color del pulgar (barra de desplazamiento móvil) */
+    border-radius: 6px; /* Bordes redondeados del pulgar */
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--header-bg); /* Color de la pista (fondo de la barra de desplazamiento) */
+    border-radius: 6px;
+}
+
 /* barra de navegacion inicio */
 
 .navbar_personalizado{
@@ -69,17 +84,17 @@ li:hover{
 
     .header{
         background: var(--header2-bg);
-        height: 70vh;
+        min-height: 70vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 40px 10%;
     }
 
     .cont_sobre_mi{
-        width: 60%;
-        height: 80%;
         display: flex;
         border-bottom: 1px solid var(--text_brand_hover);
+        align-items: center;
     }
 
     .cont_texto_sobre_mi{
@@ -105,9 +120,8 @@ li:hover{
     }
 
     .foto{
-        width: 70%;
-        height: 40%;
-        border: 1px solid black;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
         background-image: url(../assets/batman.jpeg);
         background-size: cover;
@@ -124,7 +138,20 @@ li:hover{
 
 /* responsive inicio */
 
-    @media (max-width:760px) {
+    @media(max-width:1280px){
+
+        .titulo_sobre_mi{
+            font-size: 30px;
+        }
+
+        .cont_texto_sobre_mi{
+            font-size: 17px;
+        }
+    }
+
+    @media (max-width:768px) {
+
+    /* navbar  */
 
         .navbar_personalizado{
             height: 12vh;
@@ -144,9 +171,41 @@ li:hover{
             justify-content: center;
             align-items: center;
         }
-    }
+        li{
+            font-size: 15px;
+        }
+        /* ! navbar  */
 
-    @media (max-width:600px){
+        /* sobre mi  */
+
+        .cont_sobre_mi{
+            width: 100%;
+            flex-direction: column-reverse;
+            gap: 40px;
+        }
+
+        .titulo_sobre_mi{
+            font-size: 25px;
+        }
+
+        .cont_texto_sobre_mi{
+            font-size: 15px;
+            height: 200px;
+            overflow: auto;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .cont_img_sobre_mi{
+            width: 100%;
+        }
+        
+        /* !sobre mi  */
+
+    }
+    
+
+    @media (max-width:320px){
 
         .navbar_personalizado{
             height: 8vh;
@@ -159,7 +218,23 @@ li:hover{
 
         .hamb{
             display: block;
+            font-weight: 100;
+            font-size: 30px;
+            cursor: pointer;
         }
+
+        .brand_personalizado{
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .cont_lista_nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+        }
+
     }
 
 /*! responsive fin */
