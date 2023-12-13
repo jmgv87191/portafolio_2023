@@ -52,4 +52,89 @@ body{
     text-decoration: none;
     display: inline-block;
     padding: 5px 10px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+}
+
+#inicio header nav a:hover{
+    animation: navegacion 1s;
+}
+
+.inicio .redes a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.inicio .redes a:hover{
+    color: #ff5b00;
+}
+
+
+.inicio .fila{
+    display: flex;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.inicio .fila .col{
+    width: 50%;
+}
+
+.inicio .fila .col h2{
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.inicio .fila .col p{
+    margin-bottom: 20px;
+}
+
+.inicio .fila .col .contenedor-img{
+    max-width: 300px;
+    margin: auto;
+}
+
+.inicio .fila .col .contenedor-img img{
+    width: 100%;
+}
+
+.inicio .fila .col button{
+    background: none;
+    width: fit-content;
+    padding: 5px;
+    border: 2px solid #ff5b00;
+    color: white;
+    background: linear-gradient(to right, #ff5b00, #ff9900);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.inicio .fila .col button:hover{
+    transform: scale(1.1);
+}
+
+#icono-nav{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#icono-nav:hover{
+    background-color: #3e3e3e;
+}
+
+
+
+
+
+@keyframes navegacion{
+    to{
+        border-bottom: 2px solid #ff5b00;
+    }
 }
