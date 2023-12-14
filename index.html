@@ -3,59 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <title>Document</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-***TuIntegridadAquí***" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">
 </head>
 <body>
-    
-    <!-- section -->
-    <section id="inicio" class="inicio">
-        <div class="contenido">
-            <header>
+
+
+
+    <!-- main container -->
+    <main class="main-container">
+        
+        <!-- aside -->
+            <aside class="aside" >
                 <div class="logo">
-                    <span class="material-symbols-outlined">bolt</span>
-                    <h1>juan</h1>
+                    <a href="#"><span>A</span>tlas</a>
                 </div>
-                <nav id="nav" >
-                    <a href="#inicio">inicio</a>
-                    <a href="#servicios">servicios</a>
-                    <a href="#habilidades">habilidades</a>
-                    <a href="#trabajos">trabajos</a>
-                    <a href="#contacto">contacto</a>
-                </nav>
+                <ul class="nav">
+                    <li><a href="#" class="active" ><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="#" class="active" ><i class="fa fa-user"></i>About</a></li>
+                    <li><a href="#" class="active" ><i class="fa fa-list"></i>Services</a></li>
+                    <li><a href="#" class="active" ><i class="fa fa-briefcase"></i>Portafolio</a></li>
+                    <li><a href="#" class="active" ><i class="fa fa-comments"></i>Contact</a></li>
+                </ul>
+            </aside>
+        <!-- !aside -->
 
-                <div id="icono-nav">
-                    <span class="material-symbols-outlined">menu</span>
-                </div>
+        <!-- main content -->
+            <div class="main-content">
+                <!-- home section -->
+                <section class="home section" >
+                    Home
+                </section>
+                <!-- !home section -->
 
-                <div class="redes">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
-                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-                </div>
-
-            </header>
-
-            <div class="fila">
-                <div class="col">
-                    <h2>Desarrollador</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni harum corporis asperiores porro quisquam, 
-                    id doloribus obcaecati maxime pariatur quae.</p>
-                    <button class="btn btn-1">Descargar CV</button>
-                </div>
-                <div class="col">
-                    <div class="contenedor-img">
-                        <img src="assets/foto-inicio.png" alt="">
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
+        <!-- !main content -->
 
 
-    <a href="#inicio">inicio</a>
 
+    </main>
+    <!-- ! main container -->
+
+
+
+    <script src="js/index.js"></script>
 </body>
 </html>
