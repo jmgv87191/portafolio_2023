@@ -46,7 +46,6 @@ ul{
 .padd-15{
     padding-left: 15px;
     padding-right: 15px;
-
 }
 
 .container{
@@ -63,6 +62,13 @@ ul{
 .section-title{
     flex: 0 0 100%;
     max-width: 100%;
+}
+
+.section-title h2{
+    font-size: 40px;
+    color: var(--text-back-900);
+    font-weight: 700;
+    position: relative;
 }
 
 .row{
