@@ -590,35 +590,35 @@ h3.my-profession{
 /* !service */
 
 /* portfolio */
-.porfolio .container{
+.portfolio .container{
     padding-bottom: 40px;
 }
 
-.porfolio .porfolio-heading{
+.portfolio .portfolio-heading{
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 40px;
 }
 
-.porfolio .porfolio-heading h2{
+.portfolio .portfolio-heading h2{
     color: var(--text-black-900);
-    font-weight: 500px;
+    font-weight: 500;
 }
 
-.porfolio .porfolio-item{
+.portfolio .portfolio-item{
     flex: 0 0 33.33%;
-    max-width: 33.33;
+    max-width: 33.33%;
     margin-bottom: 30px;
 }
 
-.porfolio .porfolio-item-inner{
+.portfolio .portfolio-item-inner{
     border: 6px solid var(--bg-back-100);
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
 }
 
-.porfolio .porfolio-item-inner .porfolio-img img{
+.portfolio .portfolio-item-inner .portfolio-img img{
     width: 100px;
     display: block;
 }
