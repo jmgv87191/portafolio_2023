@@ -718,7 +718,10 @@ h3.my-profession{
 }
 
 .contact .contact-form .form-item textarea.form-control{
-    height: 140px;
+    min-height: 80px;
+    max-height: 200px;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 .contact .contact-form .btn{
