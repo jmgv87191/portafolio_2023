@@ -8,7 +8,7 @@ let sections = {
 };
 
 var typed = new Typed(".typing", {
-    strings: ["", "Web Designer", "Web Developer", "juan", "manuel"],
+    strings: ["", "Web Designer", "Web Developer", "juan", "manuel","gutierrez"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
