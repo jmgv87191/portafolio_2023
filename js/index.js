@@ -14,8 +14,6 @@ var typed = new Typed(".typing", {
     loop: true
 });
 
-console.log("adasd")
-
 function cambiarColor(elemento) {
     for (let el of elementos_navegacion) {
         el.classList.remove("active");
