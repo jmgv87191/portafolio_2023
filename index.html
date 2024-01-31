@@ -36,10 +36,10 @@
                 </div>
                 <ul class="nav">
                     <li><a href="#home" onclick="cambiarColor(this)" class="active" ><i class="fa fa-home"></i><span>Home</span></a></li>
-                    <li><a href="#about" onclick="cambiarColor(this)" class="" ><i class="fa fa-user"></i><span>About</span></a></li>
-                    <li><a href="#services" onclick="cambiarColor(this)" class="" ><i class="fa fa-list"></i><span>Services</span></a></li>
+                    <li><a href="#about" onclick="cambiarColor(this)" class="" ><i class="fa fa-user"></i><span>Sobre mi</span></a></li>
+                    <li><a href="#services" onclick="cambiarColor(this)" class="" ><i class="fa fa-list"></i><span>Servicios</span></a></li>
                     <li><a href="#portfolio" onclick="cambiarColor(this)" class="" ><i class="fa fa-briefcase"></i><span>Portafolio</span></a></li>
-                    <li><a href="#contact" onclick="cambiarColor(this)" class="" ><i class="fa fa-comments"></i><span>Contact</span></a></li>
+                    <li><a href="#contact" onclick="cambiarColor(this)" class="" ><i class="fa fa-comments"></i><span>Contacto</span></a></li>
                 </ul>
             </aside>
         <!-- !aside -->
@@ -53,15 +53,18 @@
                         <div class="row">
                             <div class="home-info padd-15">
                                 <h3 class="hello">
-                                    Hello, my name is <span class="name" >Juan Manuel</span> 
+                                    Hola mi nombre es <span class="name" >Juan Manuel</span> 
                                 </h3>
                                 <h3 class="my-profession" >
                                     soy <span class="typing" > web designer </span>
                                 </h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad optio delectus 
-                                    laboriosam nam dolorem cumque magni commodi deserunt quae soluta?</p>
-                                    <a href="#contact" class="btn hire-me" >Hire Me</a>
-                            </div>
+                                <p>
+                                    Soy una persona comprometida con el aprendizaje continuo y siempre
+                                    estoy al tanto de las últimas tendencias y tecnologías en 
+                                    el ámbito de la programación.
+                                </p>
+<!--                                     <a href="#contact" class="btn hire-me" >Hire Me</a>
+ -->                            </div>
                             <div class="home-img padd-15">
                                 <img src="assets/web-1935737.png" alt="">
                             </div>
@@ -76,21 +79,20 @@
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
-                                <h2>About Me</h2>
+                                <h2>Sobre Mi</h2>
                             </div>
                         </div>
                         <div class="row">
                             <div class="about-content padd-15">
                                 <div class="row">
                                     <div class="about-text padd-15">
-                                        <h3>I´m Juan Manuel and <span>Web Developer</span> </h3>
+                                        <h3>Hola, mi nombre es Juan Manuel y soy <span>Web Developer</span> </h3>
                                         <p>
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi animi nihil
-                                            doloribus voluptate velit. Magnam commodi fugit, nulla suscipit explicabo 
-                                            ipsam dolores, quas eos autem nam facere voluptates laborum quis velit maiores 
-                                            quidem qui? Animi distinctio voluptas ullam atque sunt dignissimos expedita 
-                                            blanditiis repudiandae, non quam eveniet quo excepturi totam aut, voluptates 
-                                            doloribus! Praesentium, blanditiis.
+                                            Me apasiona el mundo del desarrollo web y encuentro una gran satisfacción en crear experiencias interactivas y atractivas en línea. Mi enfoque principal se centra en las tecnologías fundamentales como HTML, CSS y JavaScript puro, las cuales considero los pilares esenciales para construir proyectos sólidos y eficientes.
+                                        </p>
+                                        <p>
+                                            Además, he ampliado mis habilidades incorporando frameworks como Bootstrap y Angular en mis proyectos. 
+
                                         </p>
                                     </div>
                                 </div>
@@ -101,11 +103,11 @@
                                         <div class="row">
 
                                             <div class="info-item padd-15">
-                                                <p>Birthday: <span>19 feb 1987</span></p>
+                                                <p>Cumpleaños: <span>19 feb 1987</span></p>
                                             </div>
 
                                             <div class="info-item padd-15">
-                                                <p>Age: <span>36</span></p>
+                                                <p>Edad: <span>36</span></p>
                                             </div>
                                             
                                             <div class="info-item padd-15">
@@ -117,15 +119,15 @@
                                             </div>
 
                                             <div class="info-item padd-15">
-                                                <p>Degree: <span>computer technology engineering</span></p>
+                                                <p>Titulo: <span>Ingenieria en Tecnoligias Computacionales</span></p>
                                             </div>
 
                                         </div>
                                         <div class="row">
                                             <div class="buttons padd-15">
-                                                <a href="#" class="btn" >Download CV</a>
-                                                <a href="#" class="btn hire-me" >Hire Me</a>
-                                            </div>
+                                                <a href="#" class="btn" >Descargar CV</a>
+<!--                                                 <a href="#" class="btn hire-me" >Hire Me</a>
+ -->                                            </div>
                                         </div>
                                     </div>
                                     <div class="skills padd-15">
@@ -381,16 +383,26 @@
 
                         <div class="row cont_proyectos">
 
-                            <div class="proyecto_card">
-                                <img src="assets/cat.jpg" class="card-img" alt="">
-                                <div class="card-body">
-                                    <h1 class="card-title" >NYC</h1>
-                                    <p class="card-sub-title" >new york</p>
-                                    <p class="card-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea modi quaerat explicabo, laborum maiores praesentium doloribus culpa fuga sit quibusdam!</p>
-                                    <button class="card-btn" >book</button>
-                                </div>
-                            </div>
 
+                            <div class="cont_section">
+
+                                <section class="port_cont_img" >
+<!--                                     <div class="proyecto_card card-img" >
+                                        <img src="assets/cat.jpg" class="card-img" alt="">
+                                        <div class="card-body">
+                                            <h1 class="card-title" >NYC</h1>
+                                            <p class="card-sub-title" >new york</p>
+                                            <p class="card-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea modi quaerat explicabo, laborum maiores praesentium doloribus culpa fuga sit quibusdam!</p>
+                                            <button class="card-btn" >book</button>
+                                        </div>
+                                    </div> -->
+                                    <img src="assets/cat.jpg" class="card-img" alt="">
+                                    <img src="assets/cat.jpg" class="card-img" alt="">
+                                    <img src="assets/cat.jpg" class="card-img" alt="">
+                                    <img src="assets/cat.jpg" class="card-img" alt="">
+                                    <img src="assets/cat.jpg" class="card-img" alt="">
+                                </section>
+                            </div>
 
                         </div>
 
