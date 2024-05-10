@@ -83,14 +83,14 @@ ul{
 .section-title h2::before{
     content: '';
     height: 4px;  
-    width: 50px;
+    width: 210px;
     background-color: var(--skin-color);
     position: absolute;
     top: 100%;
     left: 0%;
-}
+} 
 
-.section-title h2::after{
+/* .section-title h2::after{
     content: '';
     height: 4px;  
     width: 25px;
@@ -99,7 +99,7 @@ ul{
     top: 100%;
     left: 0%;
     margin-top: 8px;
-}
+} */
 
 .row{
     display: flex;
@@ -114,7 +114,7 @@ ul{
     font-weight: 500;
     padding: 12px 35px;
     color: white;
-    border-radius: 40px;
+    border-radius: 5px;
     display: inline-block;
     white-space: nowrap;
     border: none;
@@ -164,7 +164,7 @@ ul{
 .aside .logo a span{
     font-size: 40px;
 }
-
+/* 
 .aside .logo a::before{
     content: '';
     position: absolute;
@@ -186,7 +186,7 @@ ul{
     top: 0;
     right: 0;
 }
-
+ */
 .aside .nav-toggler{
     height: 40px;
     width: 45px;
@@ -303,7 +303,7 @@ h3.my-profession{
     position: relative;
 }
 
-.home-img::after{
+/* .home-img::after{
     content: '';
     position: absolute;
     height: 80px;
@@ -323,13 +323,14 @@ h3.my-profession{
     border-left: 10px solid var(--skin-color);
     left: -20px;
     top: -40px;
-}
+} */
 
 .home .home-img img {
     height: 400px;
-    width: 250px;
+    min-width: 65%;
     margin: auto;
     border-radius: 5px;
+
 }
 
 /* about */
@@ -483,7 +484,7 @@ h3.my-profession{
     padding-bottom: 0;
 }
 
-.about .about-content .timeline .timeline-item::before{
+/* .about .about-content .timeline .timeline-item::before{
     content: '';
     width: 1px;
     position: absolute;
@@ -491,9 +492,9 @@ h3.my-profession{
     left: 7px;
     top: 0;
     background: var(--skin-color);
-}
+} */
 
-.about .about-content .timeline .circle-dot{
+/* .about .about-content .timeline .circle-dot{
     position: absolute;
     left: 0;
     top: 0;
@@ -501,14 +502,13 @@ h3.my-profession{
     width: 15px;
     border-radius: 50%;
     background-color: var(--skin-color);
-}
+} */
 
 .about .about-content .timeline .timeline-date{
     font-weight: 400;
     font-size: 14px;
     margin-bottom: 12px;
     color: var(--text-black-700);
-
 }
 
 .about .about-content .timeline .timeline-date .fa{
@@ -650,6 +650,7 @@ h3.my-profession{
     width: 100%;
     height: 100%;
     object-fit: cover;
+
 }
 
 .card-body{
@@ -706,6 +707,23 @@ h3.my-profession{
     cursor: pointer;
 }
 
+.proyecto {
+    width: 20%;
+    height: 60%;
+    overflow: hidden;
+    border: 1px solid red;
+    transition: transform 0.3s; 
+
+
+}
+
+.proyecto1 img {
+    width: 160%;
+    height: 100%;
+    &:hover{
+        transform: scale(2);
+    }
+}
 /*! portfolio */
 
 /* contact */
@@ -777,7 +795,7 @@ h3.my-profession{
 .contact .contact-form .form-item .form-control{
     width: 100%;
     height: 50px;
-    border-radius: 25px;
+    border-radius: 5px;
     background: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
     padding: 10px 25px;
@@ -877,32 +895,9 @@ h3.my-profession{
 
 /* portafolio */
 
-.port_cont_img{
-    display: flex;
-    width: 600px;
-    height: 300px;
-}
-
-.port_cont_img img{
-    width: 0;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5s ease;
-}
-
-.port_cont_img img:hover{
-    cursor: crosshair;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
-}
-
 .cont_section{
+    border: 1px solid black;
     width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
 }
 
 /* portafolio */

@@ -1,4 +1,5 @@
 let elementos_navegacion = document.querySelectorAll('.nav li a');
+
 let sections = {
     home: document.querySelector('#home'),
     about: document.querySelector('#about'),
