@@ -882,6 +882,8 @@ h3.my-profession{
 .cont_section{
     width: 100%;
     border: 1px solid black;
+    display: flex;
+    column-gap: 20px;
 }
 
 .proyecto {
